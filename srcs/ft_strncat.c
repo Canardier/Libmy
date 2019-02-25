@@ -7,7 +7,7 @@ char	*ft_strncat(char *dest, const char *src, size_t n)
 
 	a = ft_strlen(dest);
 	b = 0;
-	while (b <= nb)
+	while (n--)
 	{
 		dest[a] = src[b];
 		b++;

@@ -2,8 +2,8 @@
 
 void	ft_putnbr(int n)
 {
-	if (n = 2 147 483 647)
-		ft_putstr("2 147 483 647");
+	if (n == 2147483647)
+		ft_putstr("2147483647");
 
 	else if (n < 0)
 	{

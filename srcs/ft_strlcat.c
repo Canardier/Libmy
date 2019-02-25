@@ -7,7 +7,7 @@ size_t 		strlcat (char *dest, const char *src, size_t size)
 
 	a = ft_strlen(dest);
 	b = 0;
-	while (b <= size)
+	while (size--)
 	{
 		dest[a] = src[b];
 		b++;
