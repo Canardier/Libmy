@@ -5,6 +5,14 @@
 #include <unistd.h>
 #include <string.h>
 
+typedef struct s_list
+{
+	void		*content;
+	size_t		content_size;
+	struct s_list	*next;
+}			t_list;
+
+
 void	*ft_memset(void *s, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
@@ -21,7 +29,7 @@ char	*ft_strncat(char *dest, const char *src, size_t n);
 int	ft_strlcat(char *dest, char *src, unsigned int size);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
-char	*ft_strstr(const char *str, const char *chr);
+char	*ft_strstr(const char *meule_de_foin, const char *aiguille);
 char	*ft_strmstr(const char *str, const char *chr, size_t n);
 int	ft_strcmp(char const *s1, char const *s2);
 int	ft_strncmp(const char *s1, const char *s2, size_t n);
