@@ -2,7 +2,7 @@
 
 NAME =	libft.a
 
-SRC =	srcs/ft_atoi.c\
+SRC =		srcs/ft_atoi.c\
 		srcs/ft_bzero.c\
 		srcs/ft_isalnum.c\
 		srcs/ft_isalpha.c\
@@ -63,11 +63,12 @@ all: $(NAME)
 
 $(NAME): 
 	gcc $(FLAG) -c $(SRC) -I includes/
+	mv *.o srcs/
 	ar rc $(NAME) $(OBJ)
 	ranlib $(NAME)
 
 clean:
-	rm -f *.o
+	rm -f $(OBJ)
 
 fclean: clean
 	rm -f $(NAME)
