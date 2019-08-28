@@ -1,8 +1,6 @@
-.SILENT:
-
 NAME =	libft.a
 
-SRC =		srcs/ft_atoi.c\
+SRCS =		srcs/ft_atoi.c\
 		srcs/ft_bzero.c\
 		srcs/ft_isalnum.c\
 		srcs/ft_isalpha.c\
@@ -53,24 +51,34 @@ SRC =		srcs/ft_atoi.c\
 		srcs/ft_strsub.c\
 		srcs/ft_strtrim.c\
 		srcs/ft_tolower.c\
-		srcs/ft_toupper.c
+		srcs/ft_toupper.c\
 
-OBJ =	$(SRC:.c=.o)
+RM=	rm -rf
 
-FLAG =	-Wall -Werror -Wextra
+HDR=	includes/
+
+OBJS= $(SRCS:.c=.o)
+
+FLAG= -Wall -Werror -Wextra
 
 all: $(NAME)
 
-$(NAME): 
-	gcc $(FLAG) -c $(SRC) -I includes/
-	mv *.o srcs/
-	ar rc $(NAME) $(OBJ)
+.c.o:
+	gcc -I $(HDR) -c $< -o $(<:.c=.o)
+
+$(NAME): $(OBJS)
+	ar rc $(NAME) $(OBJS)
 	ranlib $(NAME)
 
 clean:
-	rm -f $(OBJ)
+	$(RM) $(OBJS)
 
 fclean: clean
-	rm -f $(NAME)
+	$(RM) $(NAME)
 
-re: fclean all
+re:	fclean all
+
+.PHONY:	all\
+	clean\
+	fclean\
+	re
