@@ -1,5 +1,5 @@
-#ifndef LIBFT_H
-#define LIBFT_H
+#ifndef LIBMY_H
+#define LIBMY_H
 
 #include <stdlib.h>
 #include <unistd.h>
@@ -43,7 +43,7 @@ int			my_strncmp(const char *s1, const char *s2, size_t n);
 int			my_strnequ(char const *s1, char const *s2, size_t n);
 int			my_tolower(int c);
 int			my_toupper(int c);
-size_t	my_strlen(const char *s);
+size_t		my_strlen(const char *s);
 void		my_bzero(void *s, size_t n);
 void		*my_memalloc(size_t size);
 void		*my_memccpy(void *dest, const void *src, int c, size_t n);

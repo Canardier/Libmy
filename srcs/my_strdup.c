@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "libmy.h"
 
 char 	*my_strdup(const char *s)
 {

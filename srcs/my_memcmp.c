@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "libmy.h"
 
 int      my_memcmp(const void *s1, const void *s2, size_t n)
 {

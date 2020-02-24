@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "libmy.h"
 
 char *my_strmapi(char const *s, char (*f)(unsigned int, char))
 {

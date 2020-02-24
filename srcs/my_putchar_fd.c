@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "libmy.h"
 
 void	my_putchar_fd(char c, int fd)
 {

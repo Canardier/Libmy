@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "libmy.h"
 
 int		my_strequ(char const *s1, char const *s2)
 {

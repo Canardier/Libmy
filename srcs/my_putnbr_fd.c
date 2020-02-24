@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "libmy.h"
 
 void	my_putnbr_fd(int n, int fd)
 {

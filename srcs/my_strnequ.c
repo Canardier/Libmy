@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "libmy.h"
 
 int		my_strnequ(char const *s1, char const *s2, size_t n)
 {

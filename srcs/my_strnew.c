@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "libmy.h"
 
 char *my_strnew(size_t size)
 {

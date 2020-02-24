@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "libmy.h"
 
 void	my_bzero(void *s, size_t n)
 {

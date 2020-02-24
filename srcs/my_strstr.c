@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "libmy.h"
 
 char *my_strstr(const char *meule_de_foin, const char *aiguille)
 {

@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "libmy.h"
 
 void *my_memchr(const void *s, int c, size_t n)
 {

@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "libmy.h"
 
 char	*my_strncpy(char *dest, const char *src, size_t n)
 {

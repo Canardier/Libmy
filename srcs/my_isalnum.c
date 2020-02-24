@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "libmy.h"
 
 int 	my_isalnum(int c)
 {

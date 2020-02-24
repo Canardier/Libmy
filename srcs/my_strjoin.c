@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "libmy.h"
 
 char *my_strjoin(char const *s1, char const *s2)
 {

@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "libmy.h"
 
 size_t 		strlcat (char *dest, const char *src, size_t size)
 {

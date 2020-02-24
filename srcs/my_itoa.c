@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "libmy.h"
 
 static char *my_strrev(char *s)
 {

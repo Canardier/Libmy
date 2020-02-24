@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "libmy.h"
 
 static int 	count_char(char const *s, char c)
 {

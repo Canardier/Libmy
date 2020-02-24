@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "libmy.h"
 
 char *my_strsub(char const *s, unsigned int start, size_t len)
 {
